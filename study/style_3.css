@@ -1,0 +1,222 @@
+.O-QUE-QUER-ESTUDAR {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1718px;
+  min-height: 1117px;
+  position: relative;
+}
+
+.O-QUE-QUER-ESTUDAR .group {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1722px;
+  height: 1117px;
+}
+
+.O-QUE-QUER-ESTUDAR .rectangle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1718px;
+  height: 1117px;
+  background-color: #012169;
+}
+
+.O-QUE-QUER-ESTUDAR .text-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 289px;
+  width: 1202px;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "LuckiestGuy", cursive;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 65px;
+}
+
+/* Retângulo do Botão 1 */
+.O-QUE-QUER-ESTUDAR .div {
+  position: absolute;
+  top: 170px;
+  left: 233px;
+  width: 1276px;
+  height: 153px;
+  background-color: #EBF132FA;
+  border-radius: 15px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Retângulo do Botão 2 */
+.O-QUE-QUER-ESTUDAR .rectangle-2 {
+  position: absolute;
+  top: 340px;
+  left: 233px;
+  width: 1276px;
+  height: 153px;
+  background-color: #EBF132FA;
+  border-radius: 15px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Retângulo do Botão 3 */
+.O-QUE-QUER-ESTUDAR .rectangle-3 {
+  position: absolute;
+  top: 510px;
+  left: 233px;
+  width: 1276px;
+  height: 153px;
+  background-color: #EBF132FA;
+  border-radius: 15px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texto do Botão 1 */
+.O-QUE-QUER-ESTUDAR .p {
+  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none;
+}
+
+/* Texto do Botão 2 */
+.O-QUE-QUER-ESTUDAR .text-wrapper-2 {
+  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none;
+}
+
+/* Texto do Botão 3 */
+.O-QUE-QUER-ESTUDAR .text-wrapper-3 {
+  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none;
+}
+
+.O-QUE-QUER-ESTUDAR .ellipse {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 680px;
+  left: 1344px;
+  width: 261px;
+  height: 261px;
+  z-index: 12;
+}
+
+.O-QUE-QUER-ESTUDAR .speech-bubble {
+  position: absolute;
+  top: 560px;
+  left: 1067px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.O-QUE-QUER-ESTUDAR .imessage-logo {
+  position: absolute;
+  top: 64px;
+  left: 2px;
+  width: 315px;
+  height: 256px;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.O-QUE-QUER-ESTUDAR .vector {
+  flex: 1;
+  width: 283.62px;
+  transform: rotate(-180deg);
+}
+
+.O-QUE-QUER-ESTUDAR .text-wrapper-4 {
+  position: absolute;
+  top: 115px;
+  left: 36px;
+  width: 242px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #012169;
+  overflow: hidden;
+}
+
+.O-QUE-QUER-ESTUDAR {
+  position: relative;
+  width: 1718px;
+  height: 1117px;
+  transform: scale(0.75); 
+  transform-origin: center center;
+}
+
+/* 1. Transição suave para todos os botões */
+.O-QUE-QUER-ESTUDAR .div,
+.O-QUE-QUER-ESTUDAR .rectangle-2,
+.O-QUE-QUER-ESTUDAR .rectangle-3 {
+  transition: all 0.25s ease-in-out; /* Define a velocidade e suavidade da animação */
+}
+
+/* 2. Efeito ao passar o cursor por cima (Hover): Cresce um pouco e muda levemente de cor */
+.O-QUE-QUER-ESTUDAR .div:hover,
+.O-QUE-QUER-ESTUDAR .rectangle-2:hover,
+.O-QUE-QUER-ESTUDAR .rectangle-3:hover {
+  transform: scale(1.03); /* Aumenta levemente o botão (3%) */
+  filter: brightness(1.08); /* Deixa a cor mais viva */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra para dar profundidade */
+}
+
+/* 3. Efeito ao clicar (Active): Dá uma leve retraída simulando o toque/clique físico */
+.O-QUE-QUER-ESTUDAR .div:active,
+.O-QUE-QUER-ESTUDAR .rectangle-2:active,
+.O-QUE-QUER-ESTUDAR .rectangle-3:active {
+  transform: scale(0.98); /* Reduz levemente simulando o "afundar" do botão */
+  filter: brightness(0.95);
+}

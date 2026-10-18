@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #012169; /* Fundo azul da página inteira */
+  overflow: hidden; /* Remove barras de rolagem */
+}
+
+.TELA-INICIAL-AVATAR {
+  position: relative;
+  width: 1718px;
+  height: 1117px;
+  transform: scale(0.68); /* Ajusta proporcionalmente à tela */
+  transform-origin: center center;
+  background-color: transparent; /* Remove qualquer fundo branco */
+}
+
+.TELA-INICIAL-AVATAR .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1718px;
+  height: 1117px;
+  background-color: #012169;
+}
+
+.TELA-INICIAL-AVATAR .div {
+  position: absolute;
+  top: 773px;
+  left: 670px;
+  width: 378px;
+  height: 72px;
+  background-color: #83ac51;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040;
+  cursor: pointer;
+}
+
+.TELA-INICIAL-AVATAR .text-wrapper {
+  position: absolute;
+  top: 780px;
+  left: 756px;
+  font-family: "LuckiestGuy", cursive;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none; /* Garante que o clique passe para a div do botão */
+}
+
+.TELA-INICIAL-AVATAR .text-wrapper-2 {
+  position: absolute;
+  top: 311px;
+  left: 254px;
+  width: 1210px;
+  font-family: "LuckiestGuy", cursive;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 96px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.TELA-INICIAL-AVATAR .ellipse {
+  border-radius: 50%;
+  object-fit: cover;
+  left: 225px;
+  position: absolute;
+  top: 498px;
+  width: 204px;
+  height: 204px;
+}
+
+.TELA-INICIAL-AVATAR .img {
+  border-radius: 50%;
+  object-fit: cover;
+  left: 1289px;
+  position: absolute;
+  top: 498px;
+  width: 204px;
+  height: 204px;
+}
+
+.TELA-INICIAL-AVATAR .ellipse-2 {
+  border-radius: 50%;
+  object-fit: cover;
+  left: 1023px;
+  position: absolute;
+  top: 498px;
+  width: 204px;
+  height: 204px;
+}
+
+.TELA-INICIAL-AVATAR .ellipse-3 {
+  border-radius: 50%;
+  object-fit: cover;
+  left: 757px;
+  position: absolute;
+  top: 498px;
+  width: 204px;
+  height: 204px;
+}
+
+.TELA-INICIAL-AVATAR .ellipse-4 {
+  border-radius: 50%;
+  object-fit: cover;
+  left: 491px;
+  position: absolute;
+  top: 498px;
+  width: 204px;
+  height: 204px;
+}
+
+/* Cursor de ponteiro e transição ao passar o mouse sobre qualquer avatar */
+.TELA-INICIAL-AVATAR img {
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Classe aplicada ao avatar selecionado */
+.TELA-INICIAL-AVATAR img.selected {
+  border: 6px solid #FFD700; /* Borda amarela/dourada */
+  box-shadow: 0px 0px 15px #FFD700; /* Efeito glow amarelado */
+  transform: scale(1.08); /* Aumenta ligeiramente o avatar selecionado */
+}

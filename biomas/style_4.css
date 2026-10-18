@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #012169;
+  overflow: hidden;
+}
+
+.bg-biomas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Estica e adapta perfeitamente a qualquer monitor */
+  opacity: 0.25;     /* Deixa a imagem translúcida */
+  z-index: 0;        /* Fica abaixo de tudo */
+}
+
+.element-biomas-e-desafios {
+  position: relative;
+  width: 1718px;
+  height: 1117px;
+  transform: scale(0.75); 
+  transform-origin: center center;
+  z-index: 1; /* Fica acima da imagem de fundo */
+}
+
+.element-biomas-e-desafios .group {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1722px;
+  height: 1117px;
+}
+
+.element-biomas-e-desafios .rectangle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1718px;
+  height: 1117px;
+  background-color: transparent; 
+}
+
+.element-biomas-e-desafios .image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1718px;
+  height: 1117px;
+  object-fit: cover;
+  opacity: 0.25; /* Deixa o mapa translúcido no fundo */
+  z-index: 1;
+}
+
+.element-biomas-e-desafios .text-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 289px;
+  width: 1202px;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "LuckiestGuy", cursive;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 65px;
+}
+
+.element-biomas-e-desafios .div {
+  position: absolute;
+  top: 760px;
+  left: 684px;
+  width: 405px;
+  height: 100px;
+  background-color: #83ac51;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040
+}
+
+.element-biomas-e-desafios .group-2 {
+  position: absolute;
+  top: 200px;  /* Reduzimos de 317px para 230px para subir o quadro azul e o texto */
+  left: 215px;
+  width: 1278px;
+  height: 560px;
+  z-index: 3;  /* Garante que fica visível acima da imagem de fundo */
+}
+
+.element-biomas-e-desafios .rectangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1276px;
+  height: 560px;
+  background-color: #012169;
+  border-radius: 15px;
+}
+
+.element-biomas-e-desafios .p{
+  position: absolute;
+  top: 27px;
+  left: 211px;
+  width: 921px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-biomas-e-desafios .ellipse {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 827px;
+  left: 105px;
+  width: 261px;
+  height: 261px;
+  z-index: 5;
+  transform: scaleX(-1); /* Inverte a onça horizontalmente para olhar para a direita */
+}
+
+.element-biomas-e-desafios .speech-bubble {
+position: absolute;
+  top: 610px;   /* Alinha verticalmente com o avatar da onça */
+  left: 320px;  /* Posiciona logo à direita da onça (que está em left: 105px) */
+  width: 380px;
+  height: 380px;
+  z-index: 4;        /* Fica na camada superior para aparecer por cima de tudo */
+}
+
+.element-biomas-e-desafios .imessage-logo {
+position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: scaleX(-1); /* Remove rotações indesejadas que distorciam o balão */
+}
+
+.element-biomas-e-desafios .vector {
+width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.element-biomas-e-desafios .text-wrapper-3 {
+position: absolute;
+  top: 105px;     /* Ajusta a posição do texto para dentro do balão vetorial */
+  left: 50px;    
+  width: 280px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26px;
+  z-index: 5;
+  transform: none;    /* Garante que o texto fique por cima do vetor do balão */
+}
+
+.element-biomas-e-desafios .rectangle-3 {
+  position: absolute;
+  top: 820px;
+  left: 1066px;
+  width: 405px;
+  height: 100px;
+  background-color: #83ac51;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #000000;
+  z-index: 5;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out; /* Adiciona a animação suave */
+}
+
+.element-biomas-e-desafios .img{
+  position: absolute;
+  top: 25px;
+  left: 325px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.element-biomas-e-desafios .text-wrapper-4 {
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  font-family: "LuckiestGuy", cursiva;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 42px;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #012169; /* Cor de fundo caso sobram margens */
+  overflow: hidden; /* Remove barras de rolagem indesejadas */
+}
+
+.element-biomas-e-desafios {
+  position: relative;
+  width: 1718px;
+  height: 1117px;
+  /* Reduz o site proporcionalmente para caber em telas menores (notebooks) */
+  transform: scale(0.75); 
+  transform-origin: center center;
+}
+
+.element-biomas-e-desafios .text-wrapper,
+.element-biomas-e-desafios .group-2,
+.element-biomas-e-desafios .div,
+.element-biomas-e-desafios .text-wrapper-2,
+.element-biomas-e-desafios .ellipse,
+.element-biomas-e-desafios .speech-bubble,
+.element-biomas-e-desafios .rectangle-3,
+.element-biomas-e-desafios .text-wrapper-4,
+.element-biomas-e-desafios .img {
+  position: absolute;
+  z-index: 3;
+}
+
+.element-biomas-e-desafios .rectangle-3:hover {
+  transform: scale(1.03);            /* Aumenta levemente o botão */
+  filter: brightness(1.08);         /* Deixa o verde mais vivo */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a profundidade da sombra */
+}
+
+/* Efeito ao clicar (Active) */
+.element-biomas-e-desafios .rectangle-3:active {
+  transform: scale(0.98);            /* Simula o afundar do botão */
+  filter: brightness(0.95);
+}

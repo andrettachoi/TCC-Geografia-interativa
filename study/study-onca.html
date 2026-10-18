@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="global_3.css">
+<link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+
+<div class="O-QUE-QUER-ESTUDAR">
+  <div class="group">
+    <div class="rectangle"></div>
+    <p class="text-wrapper">O QUE VOCÊ QUER ESTUDAR?</p>
+  </div>
+
+<!-- Botão 1: Biomas -->
+  <div id="btn-biomas" class="div" style="cursor: pointer;">
+    <p class="p">Biomas e Desafios Socioambientais Brasileiros</p>
+  </div>
+
+  <!-- Botão 2: Cartografia -->
+  <div id="btn-cartografia" class="rectangle-2" style="cursor: pointer;">
+    <p class="text-wrapper-2">Cartografia, Relevo e Recursos Naturais</p>
+  </div>
+
+  <!-- Botão 3: População -->
+  <div id="btn-pue" class="rectangle-3" style="cursor: pointer;">
+    <p class="text-wrapper-3">População, Urbanização e Economia do Brasil</p>
+  </div>
+
+  <img class="ellipse" src="../img/oncaface.png" />
+  <div class="speech-bubble">
+    <div class="imessage-logo">
+      <img class="vector" src="../img/vector.svg" />
+    </div>
+    <p class="text-wrapper-4">Você pode escolher outro conteúdo depois</p>
+  </div>
+</div>
+
+<script>
+    const btnBiomas = document.getElementById('btn-biomas');
+    const btnCarto = document.getElementById('btn-cartografia');
+    const btnPue = document.getElementById('btn-pue');
+
+    btnBiomas.addEventListener('click', (e) => {
+      e.stopPropagation();
+      window.location.href = '../../biomas/biomas-onca.html';
+    });
+
+    btnCarto.addEventListener('click', (e) => {
+      e.stopPropagation();
+      window.location.href = '../../cartografia/cartografia-onca.html';
+    });
+
+    btnPue.addEventListener('click', (e) => {
+      e.stopPropagation();
+      window.location.href = '../../populacao/populacao-onca.html';
+    });
+</script>
+
+</body>
+</html>

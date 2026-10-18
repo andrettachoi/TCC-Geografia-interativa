@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="TELA-INICIAL-AVATAR" ><div class="rectangle" ></div>
+<div id="btn-pronto" style="cursor: pointer;">
+<div class="div"></div>
+<div class="text-wrapper">PRONTO?</div>
+</div>
+<div class="text-wrapper-2" >SELECIONE SEU AVATAR</div>
+<img class="ellipse" data-avatar="onca" src="img/onca.png" alt="Onça"/>
+<img class="img" data-avatar="tatu" src="img/tatu.png" alt="Tatu"/>
+<img class="ellipse-2" data-avatar="sapo-flecha" src="img/sapoflecha.png" alt="Sapo-Flecha"/>
+<img class="ellipse-3" data-avatar="harpia" src="img/harpia.png" alt="Harpia"/>
+<img class="ellipse-4" data-avatar="tucano" src="img/tucano.png" alt="Tucano"/></div>
+
+<script>
+    // Seleciona todas as imagens dentro do contêiner da tela inicial
+    const avatars = document.querySelectorAll('.TELA-INICIAL-AVATAR img');
+    const btnPronto = document.getElementById('btn-pronto');
+    let selectedAvatar = null;
+
+    avatars.forEach(avatar => {
+      avatar.addEventListener('click', () => {
+        // Remove a classe 'selected' de todos os avatares
+        avatars.forEach(img => img.classList.remove('selected'));
+        
+        // Adiciona a classe 'selected' apenas no avatar clicado
+        avatar.classList.add('selected');
+        selectedAvatar = avatar.getAttribute('data-avatar');
+      });
+    });
+
+    btnPronto.addEventListener('click', () => {
+    if (!selectedAvatar) {
+        alert('Por favor, selecione um avatar antes de prosseguir!');
+        return;
+    }
+
+    if (selectedAvatar === 'onca') {
+        window.location.href = 'Bem-vindo/bem-vindo-onca.html';
+    } 
+    else if (selectedAvatar === 'tatu') {
+        window.location.href = 'Bem-vindo/bem-vindo-tatu.html';
+    } 
+    else if (selectedAvatar === 'sapo-flecha') {
+        window.location.href = 'Bem-vindo/bem-vindo-sapo.html';
+    } 
+    else if (selectedAvatar === 'tucano') {
+        // Corrigido para a pasta correta do tucano
+        window.location.href = 'Bem-vindo/bem-vindo-tucano.html';
+    } 
+    else if (selectedAvatar === 'harpia') {
+        // Corrigido para a pasta correta da harpia
+        window.location.href = 'Bem-vindo/bem-vindo-harpia.html';
+    } 
+    else {
+        alert('Você escolheu o avatar: ' + selectedAvatar);
+    }
+});
+
+  </script>
+</body>
+</html>
